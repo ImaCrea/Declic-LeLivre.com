@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - env:
-        image: maximeguedj/declic:latest
+        image: maximeguedj/declic-lelivre:latest
         imagePullPolicy: Always
         name: declic
         ports:
