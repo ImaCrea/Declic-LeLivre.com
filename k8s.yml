@@ -1,0 +1,62 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: declic
+  namespace: declic-lelivre-com
+spec:
+  replicas: 3
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - env:
+        image: maximeguedj/declic-lelivre:latest
+        imagePullPolicy: Always
+        name: declic
+        ports:
+        - containerPort: 8080
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+  name: declic
+  namespace: declic-lelivre-com
+spec:
+  rules:
+  - host: declic-lelivre.com
+    http:
+      paths:
+      - backend:
+          serviceName: declic
+          servicePort: http
+        path: /
+  tls:
+  - hosts:
+    - declic-lelivre.com
+    secretName: declic-tls
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: declic
+  namespace: declic-lelivre-com
+spec:
+  ports:
+  - name: http
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: nginx
+
