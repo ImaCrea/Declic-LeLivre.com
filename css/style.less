@@ -130,6 +130,10 @@ body {
     }
 }
 
+.hidemail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+
 .credit {
     font-size: 0.7rem;
 }
