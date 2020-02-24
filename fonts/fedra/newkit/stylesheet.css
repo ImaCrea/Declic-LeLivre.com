@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Fedra Serif A Pro Normal';
+    src: url('FedraSerifAPro-Normal.eot');
+    src: url('FedraSerifAPro-Normal.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifAPro-Normal.woff2') format('woff2'),
+        url('FedraSerifAPro-Normal.woff') format('woff'),
+        url('FedraSerifAPro-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fedra Serif A Pro';
+    src: url('FedraSerifAPro-Bold.eot');
+    src: url('FedraSerifAPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifAPro-Bold.woff2') format('woff2'),
+        url('FedraSerifAPro-Bold.woff') format('woff'),
+        url('FedraSerifAPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fedra Serif A Pro';
+    src: url('FedraSerifAPro-Medium.eot');
+    src: url('FedraSerifAPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifAPro-Medium.woff2') format('woff2'),
+        url('FedraSerifAPro-Medium.woff') format('woff'),
+        url('FedraSerifAPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fedra Serif A Pro';
+    src: url('FedraSerifAPro-BoldItalic.eot');
+    src: url('FedraSerifAPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifAPro-BoldItalic.woff2') format('woff2'),
+        url('FedraSerifAPro-BoldItalic.woff') format('woff'),
+        url('FedraSerifAPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fedra Serif A Pro Normal';
+    src: url('FedraSerifAPro-NormalItalic.eot');
+    src: url('FedraSerifAPro-NormalItalic.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifAPro-NormalItalic.woff2') format('woff2'),
+        url('FedraSerifAPro-NormalItalic.woff') format('woff'),
+        url('FedraSerifAPro-NormalItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fedra Serif A Pro';
+    src: url('FedraSerifAPro-MediumItalic.eot');
+    src: url('FedraSerifAPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifAPro-MediumItalic.woff2') format('woff2'),
+        url('FedraSerifAPro-MediumItalic.woff') format('woff'),
+        url('FedraSerifAPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fedra Serif B Pro Normal';
+    src: url('FedraSerifBPro-Normal.eot');
+    src: url('FedraSerifBPro-Normal.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifBPro-Normal.woff2') format('woff2'),
+        url('FedraSerifBPro-Normal.woff') format('woff'),
+        url('FedraSerifBPro-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fedra Serif B Pro Normal';
+    src: url('FedraSerifBPro-NormalItalic.eot');
+    src: url('FedraSerifBPro-NormalItalic.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifBPro-NormalItalic.woff2') format('woff2'),
+        url('FedraSerifBPro-NormalItalic.woff') format('woff'),
+        url('FedraSerifBPro-NormalItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fedra Serif B Pro';
+    src: url('FedraSerifBPro-MediumItalic.eot');
+    src: url('FedraSerifBPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifBPro-MediumItalic.woff2') format('woff2'),
+        url('FedraSerifBPro-MediumItalic.woff') format('woff'),
+        url('FedraSerifBPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fedra Serif B Pro';
+    src: url('FedraSerifBPro-BoldItalic.eot');
+    src: url('FedraSerifBPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifBPro-BoldItalic.woff2') format('woff2'),
+        url('FedraSerifBPro-BoldItalic.woff') format('woff'),
+        url('FedraSerifBPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fedra Serif B Pro';
+    src: url('FedraSerifBPro-Medium.eot');
+    src: url('FedraSerifBPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifBPro-Medium.woff2') format('woff2'),
+        url('FedraSerifBPro-Medium.woff') format('woff'),
+        url('FedraSerifBPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fedra Serif B Pro';
+    src: url('FedraSerifBPro-Bold.eot');
+    src: url('FedraSerifBPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifBPro-Bold.woff2') format('woff2'),
+        url('FedraSerifBPro-Bold.woff') format('woff'),
+        url('FedraSerifBPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fedra Serif B Pro Book';
+    src: url('FedraSerifBPro-Book.eot');
+    src: url('FedraSerifBPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifBPro-Book.woff2') format('woff2'),
+        url('FedraSerifBPro-Book.woff') format('woff'),
+        url('FedraSerifBPro-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fedra Serif B Pro Book';
+    src: url('FedraSerifBPro-BookItalic.eot');
+    src: url('FedraSerifBPro-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifBPro-BookItalic.woff2') format('woff2'),
+        url('FedraSerifBPro-BookItalic.woff') format('woff'),
+        url('FedraSerifBPro-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fedra Serif A Pro Book';
+    src: url('FedraSerifAPro-BookItalic.eot');
+    src: url('FedraSerifAPro-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifAPro-BookItalic.woff2') format('woff2'),
+        url('FedraSerifAPro-BookItalic.woff') format('woff'),
+        url('FedraSerifAPro-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fedra Serif A Pro Book';
+    src: url('FedraSerifAPro-Book.eot');
+    src: url('FedraSerifAPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('FedraSerifAPro-Book.woff2') format('woff2'),
+        url('FedraSerifAPro-Book.woff') format('woff'),
+        url('FedraSerifAPro-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fedra Sans';
+    src: url('FedraSans-Normal.eot');
+    src: url('FedraSans-Normal.eot?#iefix') format('embedded-opentype'),
+        url('FedraSans-Normal.woff2') format('woff2'),
+        url('FedraSans-Normal.woff') format('woff'),
+        url('FedraSans-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
