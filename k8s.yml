@@ -4,7 +4,10 @@ metadata:
   name: declic
   namespace: declic-lelivre-com
 spec:
-  replicas: 1
+  replicas: 3
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 1
   selector:
     matchLabels:
       app: nginx
@@ -15,7 +18,7 @@ spec:
     spec:
       containers:
       - env:
-        image: indiehost/declic:latest
+        image: maximeguedj/declic:latest
         imagePullPolicy: Always
         name: declic
         ports:
