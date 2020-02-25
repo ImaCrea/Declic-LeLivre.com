@@ -5,12 +5,19 @@
     <meta charset="utf-8">
     <title>Déclic - Un livre de Maxime Guedj et Anne-Sophie Jacques.</title>
     <meta name="description" content="Et s'il existait un autre Internet, respectueux de nos libertés ?">
+
+    <meta property="og:title" content="Déclic - Un livre de Maxime Guedj et Anne-Sophie Jacques.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://declic-lelivre.com">
+    <meta property="og:image" content="https://declic-lelivre.com/img/Déclic-Maxime-Guedj-Anne-Sophie-Jacques-Couverture-min.png">
+    <meta property="og:description" content="Et s'il existait un autre Internet, respectueux de nos libertés ?">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.min.css"/>
-
+         
   </head>
 
   <body>
@@ -51,8 +58,8 @@
             <a href="https://www.lalibrairie.com/livres/declic--comment-profiter-du-numerique-sans-tomber-dans-le-piege-des-geants-du-web_0-6317486_9782711201976.html">LaLibrairie.com</a> - <a href="https://www.leslibraires.fr/livre/16197242-declic-maxime-guedj-anne-sophie-jacques-les-arenes">LesLibraires.fr</a> - <a href="https://www.placedeslibraires.fr/livre/9782711201976-declic-comment-profiter-du-numerique-sans-tomber-dans-le-piege-des-geants-du-web-maxime-guedj-anne-sophie-jacques/">PlaceDesLibraires.fr</a></p>
           </p>
           <h1>Et en ebook ?</h1>
-          <p>Une édition numérique est disponible sous licence édition équitable sans DRM par là:<br>
-            <a href="">siteEbook</a></p>
+          <p>Une édition numérique sera disponible sous licence édition équitable sans DRM prochainement.<br>
+            </p>
           <h1>Infos</h1>
           <p>Paru le 26 février 2020<br>
           Prix : 19€<br>
@@ -61,7 +68,7 @@
           ISBN : 78-2-7112-0197-6
           </p>
           <h1>Feuilleter un extrait</h1>
-          <a href="">Télécharger le pdf</a>
+          <a href="ExtraitDeclic.pdf">Télécharger le pdf</a>
           <!--   message pour entreprises et asso -->
         </div>
       </div>
@@ -74,27 +81,27 @@
 
       </div>
         <div class="row mt-md-5 mt-5 mt-md-0">
-          <div class="col-lg-4   footer">
+          <!-- <div class="col-lg-4   footer">
             <h2>Se rencontrer</h2>
             <ul>
-              <li><a href="">Soirée de lancement aux Arènes (Paris)</a></li>
+              <li><a href="">[COMPLET] 26/02 - Soirée de lancement aux Arènes (Paris)</a></li>
             </ul>
-          </div>
+          </div> -->
           <div class="col-lg-4 footer mt-3 mt-lg-0">
             <h2>Nous écrire</h2>
-            <p><strong><a href="#" class="hidemail" data-name="declic-lelivre" data-domain="posteo" data-tld="net" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
-
-</strong><br>(PGP).</p>
+            <p><a href="#" class="hidemail" data-name="declic-lelivre" data-domain="posteo" data-tld="net" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a></p>
           </div>
           <div class="col-lg-4 footer mt-3 mt-lg-0">
               <h2>Restons en contact</h2>
-              <form>
+              <a href="https://framaforms.org/newsletter-declic-1582644391">S'inscrire à notre newsletter</a>
+              <!-- pas réussit à faire marcher à temps donc en standby. need help :)
+              <form id="mailSub-form" action="" method="post" accept-charset="utf-8">
                 <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez votre email">
+                  <input type="email" class="form-control" id="InputEmail" name="email" aria-describedby="emailHelp" placeholder="Entrez votre email">
                   <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais vos données avec un tiers.</small>
                 </div>
                 <button type="submit" class="btn btn-primary">Je m'inscris</button>
-              </form>
+              </form> -->
             </div>
         </div>
         <p class="credit mt-5">Le <a href="https://git.indie.host/maximeguedj/declic-lelivre">code</a> de ce site est publié sous licence libre AGPL3 - Conçu par PCFH Studio — Hébergé par <a href="https://indie.host">IndieHosters</a>, membre des <a href="https://chatons.org">CHATONS</a>.</p>
@@ -106,6 +113,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/mailSub.js"></script>
 
     <script>
         lightbox.option({
