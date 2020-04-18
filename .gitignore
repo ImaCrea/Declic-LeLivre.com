@@ -1,2 +1,3 @@
 *.br
 *.gz
+.DS_Store
