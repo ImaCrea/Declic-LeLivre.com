@@ -1,41 +1,6 @@
 variables:
-  DOCKER_IMAGE: maximeguedj/declic-lelivre
-  DOMAINE_NAME: declic-lelivre.com
+  BUCKET: declic-lelivre-com
+  FOLDER: .
 
-stages:
-  - build
-  - deploy
-
-test:
-  stage: build
-  image:
-    name: gcr.io/kaniko-project/executor:debug
-    entrypoint: [""]
-  script:
-    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --no-push
-  except:
-  - master
-
-build:
-  stage: build
-  image:
-    name: gcr.io/kaniko-project/executor:debug
-    entrypoint: [""]
-  script:
-  - cp $DOCKER_SECRET_CONFIG /kaniko/.docker/config.json
-  - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $DOCKER_IMAGE:$CI_COMMIT_SHORT_SHA
-  only:
-  - master
-
-deploy:
-  stage: deploy
-  tags:
-  - deploy
-  image:
-    name: lachlanevenson/k8s-kubectl
-    entrypoint: [""]
-  script:
-  - cat $CI_PROJECT_DIR/k8s.yml | sed "s/latest/$CI_COMMIT_SHORT_SHA/" | kubectl apply -f -
-  only:
-  - master
-
+include:
+- remote: 'https://lab.libreho.st/libre.sh/pipelines/-/raw/main/mirror_folder_to_s3.yml'
