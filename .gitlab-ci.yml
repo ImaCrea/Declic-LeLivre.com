@@ -1,6 +1,0 @@
-variables:
-  BUCKET: declic-lelivre-com
-  FOLDER: .
-
-include:
-- remote: 'https://lab.libreho.st/libre.sh/pipelines/-/raw/main/mirror_folder_to_s3.yml'
